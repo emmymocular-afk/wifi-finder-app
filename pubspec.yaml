@@ -1,0 +1,49 @@
+name: wifi_finder
+description: A Flutter app for discovering and analyzing WiFi networks.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # WiFi scanning and connectivity
+  network_info_plus: ^4.0.0
+  connectivity_plus: ^5.0.0
+  
+  # Local storage for favorites
+  shared_preferences: ^2.2.0
+  
+  # State management
+  provider: ^6.0.0
+  
+  # UI/UX
+  cupertino_icons: ^1.0.2
+  
+  # Utilities
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_linter:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+  
+  fonts:
+    - family: CustomFont
+      fonts:
+        - asset: assets/fonts/CustomFont-Regular.ttf
+        - asset: assets/fonts/CustomFont-Bold.ttf
+          weight: 700
